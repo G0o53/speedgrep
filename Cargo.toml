@@ -1,5 +1,5 @@
 [package]
-name = "sgrep"
+name = "spedgrep"
 version = "0.1.0"
 edition = "2024"
 description = "a simple grep tool"
