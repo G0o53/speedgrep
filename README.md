@@ -1,15 +1,20 @@
 # speedgrep
 
-A no nonsense grep clone, built on rust.
+A no‑nonsense, literal‑string grep clone built in Rust.
 
 ## ✨ Features
 
-- Simple syntax, just speedgrep, file and string
-- Speedy (I don't think i have to say this)
+- Simple syntax — just `speedgrep <file> <string>`
+- Ridiculously fast
 - Shows line numbers
-- Tiny
+- Tiny binary (6.4 KiB)
+- 16 lines of code
 
-# WE BEAT RIPGREP
+## 🚀 We Beat Ripgrep
 
-- Speedgrep at: 1.460 seconds
-- Ripgrep at: 8.618 seconds
+On a 1,000,000‑line test file:
+
+- **speedgrep:** 1.460 seconds  
+- **ripgrep:** 8.618 seconds  
+
+Minimalism wins.
