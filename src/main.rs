@@ -7,13 +7,13 @@ fn main() {
     let file = &args[1];
     let pattern = &args[2];
 
-    let f = File::open(file).expect("Could not open file");
+    let f = File::open(file).unwrap();
     let reader = BufReader::new(f);
 
-    for (line_number, line) in reader.lines().enumerate() {
+    for (linen, line) in reader.lines().enumerate() {
         let line = line.unwrap();
         if line.contains(pattern) {
-            println!("{pattern} @ line {}", line_number + 1);
+            println!("{pattern} @ line {}", linen + 1);
         }
     }
 }
