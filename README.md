@@ -9,3 +9,7 @@ A no nonsense grep clone, built on rust.
 - Shows line numbers
 - Tiny
 
+# WE BEAT RIPGREP
+
+- Speedgrep at: 1.460 seconds
+- Ripgrep at: 8.618 seconds
