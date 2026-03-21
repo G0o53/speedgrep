@@ -2,23 +2,33 @@
 
 A no‑nonsense, literal‑string grep clone built in Rust.
 
+### 📝 To-Do
+- [ ] Increase speed and efficiency
+- [ ] Add nicer colours without sacrificing performance
+- [ ] Make a cleaner output
+
 ## ✨ Features
 
-- Simple syntax — just `speedgrep <file> <string>`
-- Ridiculously fast
-- Shows line numbers
-- Tiny binary (6.4 KiB)
-- 16 lines of code
+- 🧠 Simple syntax — just `speedgrep <file> <string>`
+- ⚡ Ridiculously fast
+- 🔢 Shows line numbers
+- 📦 Tiny binary (6.4 KiB)
 
-# If You Want To Help
-- **Github** https://github.com/G0o53/speedgrep
-- **Cargo** https://crates.io/crates/speedgrep
+# 🤝 Contributing
+If YOU! Want to help, PR are welcome!
+Jump in here:
+
+[![Repo](https://img.shields.io/badge/GitHub-speedgrep-blue)](https://github.com/G0o53/speedgrep)
+\
+[![Repo](https://img.shields.io/badge/Cargo-speedgrep-orange)](https://crates.io/crates/speedgrep)
 
 ## 🚀 We Beat Ripgrep
 
 On a 1,000,000‑line test file:
 
-- **speedgrep:** 1.460 seconds  
-- **ripgrep:** 8.618 seconds  
+- **⚡ speedgrep:** 1.460 seconds  
+- **🦀 ripgrep:** 8.618 seconds
+
+#### Note: Speedgrep is a speed demon, while ripgrep is a regex engine.
 
 Minimalism wins.
