@@ -40,4 +40,8 @@ If your PR makes speedgrep faster *and* smaller *and* cleaner, you are a hero.
 If it makes speedgrep faster but turns it into a 20,000‑line SIMD labyrinth,  
 please fork the project and name it **quickgrep**.
 
+## 🌟 What I expect 
+- Clean code (no spaggeti bollagnetti)
+- Clear time difference if performance-focused
+
 *Sincerely, G0o53*
