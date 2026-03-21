@@ -16,6 +16,9 @@ A no‑nonsense, literal‑string grep clone built in Rust.
 
 # 🤝 Contributing
 If YOU! Want to help, PR are welcome!
+\
+Please first read the [contribution guidelines for speedgrep](CONTRIBUTING.md)
+\
 Jump in here:
 
 [![Repo](https://img.shields.io/badge/GitHub-speedgrep-blue)](https://github.com/G0o53/speedgrep)
