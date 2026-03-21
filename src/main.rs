@@ -13,7 +13,7 @@ fn main() {
     for (linen, line) in reader.lines().enumerate() {
         let line = line.unwrap();
         if line.contains(pattern) {
-            println!("{pattern} @ line {}", linen + 1);
+            println!("{}", linen + 1);
         }
     }
 }
