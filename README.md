@@ -3,9 +3,9 @@
 A no‑nonsense, literal‑string grep clone built in Rust.
 
 ### 📝 To-Do
-- [ ] Increase speed and efficiency
+- [x] Increase speed and efficiency
 - [ ] Add nicer colours without sacrificing performance
-- [ ] Make a cleaner output
+- [x] Make a cleaner output
 
 ## ✨ Features
 
