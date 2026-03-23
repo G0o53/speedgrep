@@ -12,7 +12,7 @@ A no‑nonsense, literal‑string grep clone built in Rust.
 - 🧠 Simple syntax — just `speedgrep <file> <string>`
 - ⚡ Ridiculously fast
 - 🔢 Shows line numbers
-- 📦 Tiny binary (6.4 KiB)
+- 📦 Tiny binary 
 
 # 🤝 Contributing
 If YOU! Want to help, PR are welcome!
