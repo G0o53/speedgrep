@@ -29,8 +29,8 @@ Jump in here:
 
 On a 1,000,000‑line test file:
 
-- **⚡ speedgrep:** 1.460 seconds  
-- **🦀 ripgrep:** 8.618 seconds
+- **⚡ speedgrep:** 361ms  
+- **🦀 ripgrep:** 7.4 seconds
 
 #### Note: Speedgrep is a speed demon, while ripgrep is a regex engine.
 
