@@ -25,7 +25,7 @@ fn main() {
 
             if count == 64 
             {
-                println!("{buffer}");
+                print!("{buffer}");
                 buffer.clear();
                 count = 0;
 
@@ -34,7 +34,7 @@ fn main() {
         }
         // reset it to one to do again later
         if !buffer.is_empty() {
-            println!("{buffer}"); 
+            print!("{buffer}"); 
     }
 }
 
