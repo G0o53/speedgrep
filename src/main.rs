@@ -25,7 +25,7 @@ fn main() {
 
             if count == 64 
             {
-                println!("{buffer}\n");
+                println!("{buffer}");
                 buffer.clear();
                 count = 0;
 
