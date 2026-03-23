@@ -20,12 +20,12 @@ fn main() {
         let line = line.unwrap();
         if line.contains(pattern) {
             // println!("{}", linen + 1); // inefficient and stupid
-            buffer.push_str(&format!(" {}", linen + 1));
+            buffer.push_str(&format!("{}\n", linen + 1));
             count += 1;
 
             if count == 64 
             {
-                println!("{buffer}");
+                println!("{buffer}\n");
                 buffer.clear();
                 count = 0;
 
