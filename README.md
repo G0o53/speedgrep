@@ -2,6 +2,11 @@
 
 A no‑nonsense, literal‑string grep clone built in Rust.
 
+## ⬇️  Download
+```bash
+cargo install speedgrep
+```
+
 ### 📝 To-Do
 - [x] Increase speed and efficiency
 - [ ] Add nicer colours without sacrificing performance
