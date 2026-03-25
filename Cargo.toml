@@ -7,4 +7,3 @@ license = "MPL-2.0"
 repository = "https://github.com/G0o53/speedgrep"
 homepage = "https://github.com/G0o53/speedgrep"
 
-keywords = ["substring", "search", "grep", "fast"]

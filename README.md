@@ -20,14 +20,6 @@ cargo install speedgrep
 - 🔢 Shows line numbers
 - 📦 Tiny binary 
 
-# 🧪 The Trick?
-
-Why is it 20x faster? Because it avoids the "Regex Tax" and respects the hardware:
-
-- 🚫 **ZERO REGEX:** Dosn't use regex.
-- 📦 **Syscall Batching:** Buffers 64 matches before flushing.
-
-
 # 🤝 Contributing
 If YOU! Want to help, PR are welcome!
 \
