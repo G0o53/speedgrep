@@ -1,6 +1,7 @@
 # speedgrep
 
 A no‑nonsense, literal‑string grep clone built in Rust.
+![benchmark](notcode/benchmark.gif)
 
 ## ⬇️  Download
 ```bash
