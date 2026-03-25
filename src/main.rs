@@ -1,10 +1,3 @@
-/*
- * good on ya for looking at the source,
- * as you may know, this dosn't use SIMD at ALL
- * instead it uses buffered output of 64
- * and a 'one job do it fast' philosophy
-*/
-
 use std::env;
 use std::fs::File;
 use std::io::{BufRead, BufReader};
