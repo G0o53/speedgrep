@@ -31,7 +31,7 @@ fn main() {
      * |_____\___/ \____|___\____|
     */
 
-    for (linen, line) in reader.lines().enumerate() { // checks how many lines
+    for (linen, line) in reader.lines().enumerate() { // runs the matching algorithm on every line
         let line = line.unwrap();
         if line.contains(pattern) {
             // println!("{}", linen + 1); // inefficient and stupid, never use it
