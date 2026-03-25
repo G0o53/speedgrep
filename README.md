@@ -24,10 +24,8 @@ cargo install speedgrep
 
 Why is it 20x faster? Because it avoids the "Regex Tax" and respects the hardware:
 
-- 🚫 **NO REGEX:** Pure literal substring matching.
-- 📦 **Syscall Batching:** Buffers 64 matches into a single to minimize the ammount of syscalls
-- ♻️ **Buffer Reuse:** Reuses a single string
-- ⚡ **Single Process:** Utilizes a single process to minimize overhead
+- 🚫 **ZERO REGEX:** Dosn't use regex.
+- 📦 **Syscall Batching:** Buffers 64 matches before flushing.
 
 
 # 🤝 Contributing
