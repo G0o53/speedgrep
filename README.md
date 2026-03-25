@@ -1,6 +1,6 @@
 # speedgrep
 
-A no‑nonsense, literal‑string grep clone built in Rust.
+**A no‑nonsense, literal‑string grep clone built in Rust, specialised for literal substring search of a file**
 ![benchmark](notcode/benchmark.gif)
 
 ## ⬇️  Download
