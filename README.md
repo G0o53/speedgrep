@@ -24,10 +24,10 @@ cargo install speedgrep
 
 Why is it 20x faster? Because it avoids the "Regex Tax" and respects the hardware:
 
-- 🚫 **NO REGEX:** Pure literal substring matching using Rust's optimized SIMD-backed `contains()`.
-- 📦 **Syscall Batching:** Buffers 64 matches into a single `print!` to minimize expensive context switching to the Kernel.
-- ♻️ **Buffer Reuse:** Reuses a single `String` buffer for the entire lifecycle, keeping the memory allocator silent.
-- ⚡ **Single-Threaded Purity:** No thread-sync overhead; just raw, linear throughput.
+- 🚫 **NO REGEX:** Pure literal substring matching.
+- 📦 **Syscall Batching:** Buffers 64 matches into a single to minimize the ammount of syscalls
+- ♻️ **Buffer Reuse:** Reuses a single string
+- ⚡ **Single Process:** Utilizes a single process to minimize overhead
 
 
 # 🤝 Contributing
