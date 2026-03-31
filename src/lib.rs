@@ -27,7 +27,7 @@ pub fn grep(file: &str, pattern: &str) -> std::io::Result<String> {
         let line = line.unwrap();
         if line.contains(pattern) {
             // println!("{}", linen + 1); // inefficient and stupid, never use it
-            output.push_str(&format!("{}\n", linen + 1)); // pushes the string and does some formatting
+            output.push_str(&format!("{} ", linen + 1)); // pushes the string and does some formatting
             }
         }
         Ok(output)
