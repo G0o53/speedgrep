@@ -1,6 +1,6 @@
 [package]
 name = "speedgrep"
-version = "1.1.103"
+version = "1.1.104"
 edition = "2024"
 description = "a simple grep tool"
 license = "MPL-2.0"
