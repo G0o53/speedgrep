@@ -5,4 +5,6 @@
 
 - added library, with the same functions as normal (fn name, grep)
 
+- added some compilation optimizations
+
 - fixed library to utilize #[inline] for performance
