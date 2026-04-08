@@ -1,6 +1,8 @@
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 
+
+#[inline]
 pub fn grep(file: &str, pattern: &str) -> std::io::Result<String> {
     /*
      *  __     ___    ____  ___    _    ____  _     _____ ____
