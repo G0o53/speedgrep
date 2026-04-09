@@ -16,6 +16,7 @@ quickgrep <file> <string>
 ```
 that will return a 0 if the pattern if found, a 1 if not
 <br>
+<br>
 For `speedgrep`
 ```bash
 speedgrep <file> <string>
