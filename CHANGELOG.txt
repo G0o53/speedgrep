@@ -8,3 +8,8 @@
 - added some compilation optimizations
 
 - fixed library to utilize #[inline] for performance
+
+- added the quietgrep binary to return 0 if a match if found, return one if none is found
+- added quietgrep to the library as qgrep
+- added docs folder for man pages for contributors to cat, and for users to install
+

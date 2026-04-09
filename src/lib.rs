@@ -36,3 +36,36 @@ pub fn grep(file: &str, pattern: &str) -> std::io::Result<String> {
 }
 
 
+#[inline]
+pub fn qgrep(file: &str, pattern: &str) -> i8 {
+    /*
+     *  __     ___    ____  ___    _    ____  _     _____ ____
+     *  \ \   / / \  |  _ \|_ _|  / \  | __ )| |   | ____/ ___|
+     *   \ \ / / _ \ | |_) || |  / _ \ |  _ \| |   |  _| \___ \
+     *    \ V / ___ \|  _ < | | / ___ \| |_) | |___| |___ ___) |
+     *     \_/_/   \_\_| \_\___/_/   \_\____/|_____|_____|____/
+    */
+    
+    let f = File::open(file).unwrap();
+    let reader = BufReader::new(f);
+    
+    /*
+     *  _     ___   ____ ___ ____
+     * | |   / _ \ / ___|_ _/ ___|
+     * | |  | | | | |  _ | | |
+     * | |__| |_| | |_| || | |___
+     * |_____\___/ \____|___\____|
+    */
+
+    for line in reader.lines() { // checks each line for match, if yes, returns 0, else, returns 1
+        let line = line.unwrap();
+        if line.contains(pattern) {
+            return 0;
+        }
+    }
+    -1
+}
+
+
+
+

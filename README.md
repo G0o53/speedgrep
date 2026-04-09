@@ -7,6 +7,20 @@ A no‑nonsense, literal‑string grep clone built in Rust.
 ```bash
 cargo install speedgrep
 ```
+this will install the `speedgrep` binary and the `quickgrep` binary
+
+## 📘 Use
+For `quickgrep`
+```bash
+quickgrep <file> <string>
+```
+that will return a 0 if the pattern if found, a 1 if not
+<br>
+For `speedgrep`
+```bash
+speedgrep <file> <string>
+```
+that will print all the line numbers of all the matches found
 
 ### 📝 To-Do
 - [x] Increase speed and efficiency

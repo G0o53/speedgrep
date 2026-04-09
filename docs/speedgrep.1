@@ -1,0 +1,54 @@
+SPEEDGREP(1)                 User Commands                SPEEDGREP(1)
+
+NAME
+    speedgrep - ultra-fast literal string search
+
+SYNOPSIS
+    speedgrep [OPTIONS] <file> <pattern>
+
+DESCRIPTION
+    speedgrep is a high-performance, literal-only grep alternative
+    designed for maximum performance any file size. It performs a
+    byte-level search without regular expressions, Unicode handling,
+    or formatting overhead.
+
+    speedgrep prints every matching line to standard output. It is
+    optimized for cases where the search pattern is simple and the
+    input files are large.
+    
+    speedgrep uses a buffered output, where each match is pushed
+    onto a string, and then is printed after 64 matches are found
+
+OPTIONS
+    speedgrep has no command-line options. It always performs a
+    literal byte-level search and prints matching lines.
+
+ARGUMENTS
+    <file>
+        Path to the file to search.
+
+    <pattern>
+        Literal byte sequence to search for.
+
+EXIT STATUS
+    0   At least one match was found.
+    1   No matches were found.
+    2   An error occurred.
+
+PERFORMANCE NOTES
+    speedgrep uses a tight byte-scanning loop with buffered output.
+    Searching is typically limited by I/O speed rather than CPU time.
+    Printing large numbers of matches may dominate runtime.
+
+EXAMPLE
+    Search for "ERROR" in a log file:
+        speedgrep system.log ERROR
+
+AUTHORS
+    Written by G0o53.
+    Licnesed under MPL-2.0
+
+SEE ALSO
+    quietgrep(1), grep(1), rg(1)
+
+

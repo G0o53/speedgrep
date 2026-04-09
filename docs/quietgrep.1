@@ -1,0 +1,50 @@
+QUIETGREP(1)                 User Commands               QUIETGREP(1)
+
+NAME
+    quietgrep - ultra-fast literal search with no output
+
+SYNOPSIS
+    quietgrep <file> <pattern>
+
+DESCRIPTION
+    quietgrep performs a literal byte-level search on a file and
+    produces no output. It exits with status 0 if the pattern is
+    found, or 1 if not.
+
+    quietgrep is designed for extremely fast existence checks in
+    large files. Because it performs no printing, formatting, or
+    allocation, it is significantly faster than traditional grep
+    tools when only the presence of a pattern matters.
+
+ARGUMENTS
+    <file>
+        Path to the file to search.
+
+    <pattern>
+        Literal byte sequence to search for.
+
+EXIT STATUS
+    0   The pattern was found.
+    1   The pattern was not found.
+
+PERFORMANCE NOTES
+    quietgrep uses a tight, branch-predictable byte-scanning loop.
+    Since it performs no output, it is extremly efficient for
+    checking if a log file is even worth using a different grep
+    on.
+
+EXAMPLES
+    Check if a log contains an error:
+        quietgrep system.log ERROR
+
+    Use quietgrep as a fast gate before running speedgrep:
+        quietgrep logs.txt ERROR && speedgrep logs.txt ERROR
+
+LIMITATIONS
+    quietgrep performs literal byte matching only. It does not
+    support regular expressions, Unicode-aware searching, or
+    multi-file input.
+
+SEE ALSO
+    speedgrep(1), grep(1), rg(1)
+
