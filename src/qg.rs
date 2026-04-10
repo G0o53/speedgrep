@@ -5,6 +5,7 @@ use std::io::{BufRead, BufReader};
 use std::process;
 
 fn main() {
+
     /*
      *  __     ___    ____  ___    _    ____  _     _____ ____
      *  \ \   / / \  |  _ \|_ _|  / \  | __ )| |   | ____/ ___|
@@ -12,6 +13,7 @@ fn main() {
      *    \ V / ___ \|  _ < | | / ___ \| |_) | |___| |___ ___) |
      *     \_/_/   \_\_| \_\___/_/   \_\____/|_____|_____|____/
     */
+
     let args: Vec<String> = env::args().collect();
     let file = &args[1];
     let pattern = &args[2];

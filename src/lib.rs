@@ -4,6 +4,7 @@ use std::io::{BufRead, BufReader};
 
 #[inline]
 pub fn grep(file: &str, pattern: &str) -> std::io::Result<String> {
+
     /*
      *  __     ___    ____  ___    _    ____  _     _____ ____
      *  \ \   / / \  |  _ \|_ _|  / \  | __ )| |   | ____/ ___|
@@ -38,6 +39,7 @@ pub fn grep(file: &str, pattern: &str) -> std::io::Result<String> {
 
 #[inline]
 pub fn qgrep(file: &str, pattern: &str) -> i8 {
+    
     /*
      *  __     ___    ____  ___    _    ____  _     _____ ____
      *  \ \   / / \  |  _ \|_ _|  / \  | __ )| |   | ____/ ___|
