@@ -13,3 +13,6 @@
 - added quietgrep to the library as qgrep
 - added docs folder for man pages for contributors to cat, and for users to install
 
+- moved files around, benchmark.gif is now in docs, CHANGELOG.txt is now in docs
+- increased performance
+- added a stdout locking at the start of speedgrep 
