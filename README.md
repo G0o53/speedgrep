@@ -7,12 +7,12 @@ A no‑nonsense, literal‑string grep clone built in Rust.
 ```bash
 cargo install speedgrep
 ```
-this will install the `speedgrep` binary and the `quickgrep` binary
+this will install the `speedgrep` binary and the `quietgrep` binary
 
 ## 📘 Use
-For `quickgrep`
+For `quietgrep`
 ```bash
-quickgrep <file> <string>
+quietgrep <file> <string>
 ```
 that will return a 0 if the pattern if found, a 1 if not
 <br>
