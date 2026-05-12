@@ -53,6 +53,7 @@ fn main() {
 
             if count == 64 { // checks if count is 64
                 out.write_all(buffer.as_bytes()).unwrap(); // prints buffer with lock
+                out.flush().unwrap();
                 buffer.clear(); // clears buffer
                 count = 0; // resets count
             }
